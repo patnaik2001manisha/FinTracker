@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fintracker - Home</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Manage your personal finances and easily track your money, expenses and budget">
+  <meta name="keywords" content="fast budget, appfer, expenses, expense, budget, money, income, revenues">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:locale:alternate" content="en_IE" />
+  <meta property="og:locale:alternate" content="en_CA" />
+  <meta property="og:locale:alternate" content="en_AU" />
+  <meta property="og:title" content="Fintracker - Home">
+  <meta property="og:description" content="Manage your personal finances and easily track your money, expenses and budget">
+  <meta property="og:site_name" content="Fintracker">
+  <!-- <meta property="og:url" content="https://fastbudget.app"> -->
+  <!-- <meta property="og:image" content="https://fastbudget.app/images/"> -->
+  <!-- <meta name="twitter:card" content="summary_large_image"> -->
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  
+  <!-- <link rel="canonical" href="https://fastbudget.app" /> -->
+  <!-- Languages -->
+  <link rel="alternate" hreflang="en" href="https://fastbudget.app" />
+  <link rel="alternate" hreflang="it" href="https://fastbudget.app/localized/it" />
+  <link rel="alternate" hreflang="fr" href="https://fastbudget.app/localized/fr" />
+  <link rel="alternate" hreflang="pt" href="https://fastbudget.app/localized/pt" />
+  <link rel="alternate" hreflang="es" href="https://fastbudget.app/localized/es" />
+  <link rel="alternate" hreflang="pl" href="https://fastbudget.app/localized/pl" />
+  <link rel="alternate" hreflang="cs" href="https://fastbudget.app/localized/cs" />
+  <link rel="alternate" hreflang="hu" href="https://fastbudget.app/localized/hu" />
+  <link rel="alternate" hreflang="x-default" href="https://fastbudget.app" />
+  
+  
+  <meta name="referrer" content="no-referrer" />
+  
+  <!-- Speed up tp resources load -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" referrerpolicy="no-referrer">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" referrerpolicy="no-referrer">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" referrerpolicy="no-referrer">
+  <link rel="preconnect" href="https://code.jquery.com" referrerpolicy="no-referrer">
+  
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Two+Tone" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <script defer src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js" integrity="sha256-0H3Nuz3aug3afVbUlsu12Puxva3CP4EhJtPExqs54Vg=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  
+  <script defer src="common_functions.js"></script>
+  
+</head>
+<body>
+  
+  <nav id="navbar_top" class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container-xl align-items-center w-100" data-nosnippet>
+      
+      <div class="navbar-brand noselect">
+        <img src="icon.png" width="32" height="32" class="me-2" alt=""> FinTracker
+      </div>
+      
+      <button class="navbar-toggler" type="button" aria-label="Toggle navigation bar" data-bs-toggle="collapse" data-bs-target="#navbar_actions">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="navbar-collapse collapse mb-3 mb-lg-0" id="navbar_actions">
+        <!-- <ul class="navbar-nav d-flex me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/bank-sync">Bank sync</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/gallery-page">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/faq/faq-main">Support</a>
+          </li>
+        </ul> -->
+        
+        <div class="nav-item d-flex mt-1 mt-lg-0 mb-2 mb-lg-0">
+          <div class="ms-auto me-3">
+            <!-- <button id="navbutton_web_app_auth" class="btn btn-outline-light nav-button px-2">Log in</button> -->
+          </div>
+          <div class="me-0 me-lg-2">
+            <!-- <button id="navbutton_web_app_signup" class="btn btn-outline-light nav-button px-2">Sign up</button> -->
+          </div>
+        </div>
+    
+        <div class="nav-item d-flex">
+          <div class="dropdown ms-auto">
+            <a class="nav-link d-flex align-items-center" id="dropdown_menu_language" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <!-- <span class="me-2">Language</span> <img src="/images/icons/translate_w.svg" alt=""/> -->
+            </a>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown_menu_language">
+              <a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a>
+              <a class="dropdown-item" href="#" onclick="changeLanguage('es')">Español</a>
+              <a class="dropdown-item" href="#" onclick="changeLanguage('pt')">Português</a>
+              <a class="dropdown-item" href="#" onclick="changeLanguage('fr')">Français</a>
+              <a class="dropdown-item" href="#" onclick="changeLanguage('it')">Italiano</a>
+              <a class="dropdown-item" href="#" onclick="changeLanguage('pl')">Polski</a>
+              <a class="dropdown-item" href="#" onclick="changeLanguage('cs')">Čeština</a>
+              <a class="dropdown-item" href="#" onclick="changeLanguage('hu')">Magyar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </nav>
+  
+  <main id="main_container">
+    
+    <div class="background_main">
+      <div class="container d-flex">
+        <div id="google_translate_element" class="ms-auto"></div>
+        <script type="text/javascript">
+          function googleTranslateInit() {
+              if(!!navigator.language && ["cs", "en", "it", "fr", "hu", "pt"].includes(navigator.language.slice(0, 2))) {
+                  document.getElementById("google_translate_element").style.visibility = "hidden";
+              }
+              else {
+                  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: "pt,es,fr,it,de,nl,pl,cs,da,el,sv,lt,ru,bg,hu,hr,sk,ro,uk,id,ms,th,tr,vi,zh,ar,iw", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, "google_translate_element");
+              }
+          }
+        </script>
+        <script async type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateInit"></script>
+      </div>
+    </div>
+    
+    <!-- Header -->
+    <div class="header_layout text-center">
+      <div class="container mt-4">
+        
+        <div class="row d-flex justify-content-center align-items-center">
+          <img class="col-auto" src="3.png" width="180" height="180" alt="">
+          
+          <div class="col-auto d-flex flex-column mt-4 mt-md-0">
+            <div class="intro_title_big">Fintracker</div>
+            <div class="intro_title_mid mt-2 d-none d-md-block d-lg-inline">Expense Manager</div>
+            <p class="intro_title_small mt-3">
+              Manage your personal finances and easily track your money, expenses and budget
+            </p>
+          </div>
+        </div>
+        
+        <hr class="mt-3 mb-4">
+        
+        <p class="intro_title_small mb-2">Try the web app or download the app for your devices</p>
+        <div class="row justify-content-center align-items-center mt-1">
+          <div class="col-auto">
+            <button id="button_web_app_auth" class="btn btn-lg btn-badge d-flex align-items-center my-2 my-sm-0 mx-3 ps-3 pe-4">
+              <img class="me-3" src="3.png" width="48" height="48" alt="">
+              <span class="text-start lh-sm">Try the<br><b>WEB APP</b></span>
+            </button>
+          </div>
+          <a class="col-auto" href="https://play.google.com/store/apps/details?id=com.blodhgard.easybudget" target="_blank" rel="noopener">
+            <!-- Google Play badge -->
+            <img class="store-badge" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" style="width: 263px !important;"/>
+          </a>
+          <a class="col-auto" href="https://apps.apple.com/us/app/fast-budget-expense-manager/id1178825025?platform=iphone" target="_blank" rel="noopener">
+            <!-- Apple badge -->
+            <img class="store-badge-apple" src="Download_on_the_App_Store_Badge_US-UK.svg" alt="Get it on App Store"/>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="alert alert-warning alert-dismissible fade show mt-3 mb-0 mb-md-1" role="alert" id="mct_alert" style="display: none">
+        Do you want to control your company's finances? Try <a href="https://mycompanytracker.com" target="_blank" rel="noopener">My Company Tracker</a>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" id="mct_alert_close" aria-label="Close"></button>
+      </div>
+    </div>
+    
+    <!-- Content -->
+    <div class="page_section">
+      <div class="page_section_internal container row">
+        <div class="col-md-8 my-content-text order-md-2">
+          <h2>Overview</h2>
+          <p>
+            Visualize the flow of your money at a glance with a fully customizable Overview page.<br class="d-none d-md-block"/>
+            Here you can find the balance of your last days together with the accounts, cards and budgets you use most frequently.
+          </p>
+          
+          <div class="mt-4 mx-sm-5">
+            <img class="screenshot_land img-thumbnail" src="web_overview.png" alt="" data-bs-toggle="modal" data-bs-target="#modal_o2">
+          </div>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="modal_o2" role="dialog">
+            <div class="modal-dialog modal_screenshot_land w-100 mt-4 mx-auto">
+              <div class="modal-content">
+                <img class="img-thumbnail" src="web_overview.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 order-md-1 mt-3 mt-md-0">
+          <div class="device_background">
+            <svg class="circle_container" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="pale_dark_yellow" cx="50" cy="50" r="50"></circle>
+            </svg>
+            <svg class="circle_container" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="dark_yellow" cx="50" cy="50" r="40"></circle>
+            </svg>
+            <svg class="shape_cross green" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" style="bottom: 15%; left: 6%;">
+              <rect x="-32.54" y="78.39" width="300" height="84" rx="42" transform="translate(120.42 -49.88) rotate(45)"></rect>
+              <rect x="-32.54" y="78.39" width="300" height="84" rx="42" transform="translate(-49.88 120.42) rotate(-45)"></rect>
+            </svg>
+            <svg class="shape_circle red" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="top: 15%; right: 6%;"><circle cx="50" cy="50" r="50"></circle></svg>
+            
+            <div class="device_wrapper">
+              <div class="device">
+                <img class="screenshot_port img-thumbnail" src="overview.png" alt="" data-bs-toggle="modal" data-bs-target="#modal_o1">
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="modal_o1" role="dialog">
+          <div class="modal-dialog modal_screenshot_port">
+            <div class="modal-body">
+              <img class="img-thumbnail" src="overview.png" alt="">
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="page_section background_main_pale">
+      <div class="page_section_internal container row">
+        <div class="col-md-8 my-content-text order-md-2">
+          <h2>Accounts with automatic sync</h2>
+          <p>
+            Download automatically your transactions from your bank account.
+            <br>
+            <!-- <a href="/bank-sync">Check if your bank is supported</a> -->
+            <br>
+            This feature is optional. You can enter your transactions manually.
+          </p>
+          <p>
+            You can view the most important information relating to an account with many charts and reports.<br class="d-none d-md-block"/>
+            There is also an entire section dedicated to credit cards.<br class="d-none d-md-block"/>
+          </p>
+        </div>
+        
+        <div class="col-md-4 order-md-1">
+          <div class="device_background">
+            <svg class="circle_container" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="pale_blue" cx="50" cy="50" r="50"></circle>
+            </svg>
+            <svg class="circle_container" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="blue" cx="50" cy="50" r="40"></circle>
+            </svg>
+            <svg class="shape_cross red" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" style="top: 15%; left: 6%;">
+              <rect x="-32.54" y="78.39" width="300" height="84" rx="42" transform="translate(120.42 -49.88) rotate(45)"></rect>
+              <rect x="-32.54" y="78.39" width="300" height="84" rx="42" transform="translate(-49.88 120.42) rotate(-45)"></rect>
+            </svg>
+            <svg class="shape_circle green" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="bottom: 15%; right: 6%;"><circle cx="50" cy="50" r="50"></circle></svg>
+            
+            <div class="device_wrapper">
+              <div class="device">
+                <img class="screenshot_port img-thumbnail" src="accounts.png" alt="" data-bs-toggle="modal" data-bs-target="#modal_a1">
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Modal -->
+        <div class="modal fade" id="modal_a1" role="dialog">
+          <div class="modal-dialog modal_screenshot_port">
+            <div class="modal-body">
+              <img class="img-thumbnail" src="accounts.png" alt="">
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+
+    <div class="page_section">
+      <div class="page_section_internal container row">
+        <div class="col-12 col-md-8 my-content-text order-md-2">
+          <h2>Budgets</h2>
+          <p>
+            Create custom budgets to always know how much money you still have available.<br class="d-none d-md-block"/>
+            It's possible to select more than one category for each budget.
+          </p>
+        </div>
+        <div class="col-12 col-md-4 order-md-1 d-flex justify-content-center">
+          <img class="screenshot_port img-thumbnail w-50 me-1" src="budgets.png" alt="" data-bs-toggle="modal" data-bs-target="#modal_b1">
+          <img class="screenshot_port img-thumbnail w-50 ms-1" src="budget_transactions.png" alt="" data-bs-toggle="modal" data-bs-target="#modal_b2">
+        </div>
+  
+        <!-- Modal -->
+        <div class="modal fade" id="modal_b1" role="dialog">
+          <div class="modal-dialog modal_screenshot_port">
+            <div class="modal-body">
+              <img class="img-thumbnail" src="budgets.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modal_b2" role="dialog">
+          <div class="modal-dialog modal_screenshot_port">
+            <div class="modal-body">
+              <img class="img-thumbnail" src="budget_transactions.png" alt="">
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+    
+    <div class="page_section background_main_pale">
+      <div class="page_section_internal container row">
+        <div class="col-md-8 my-content-text order-md-2">
+          <h2>Transactions</h2>
+          <p>
+            Manage your daily expenses as you wish.
+            You can create unlimited categories and subcategories to track them better.
+            Scheduled transactions and transaction templates will help you to speed up the insertion of new transactions.
+          </p>
+          
+          <div class="d-none d-lg-block mt-4 mx-sm-5">
+            <img class="screenshot_land img-thumbnail" src="web_transactions_dark.png" alt="" data-bs-toggle="modal" data-bs-target="#modal_t2">
+          </div>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="modal_t2" role="dialog">
+            <div class="modal-dialog modal_screenshot_land w-100 mt-4 mx-auto">
+              <div class="modal-content">
+                <img class="img-thumbnail" src="web_transactions_dark.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 order-md-1 mt-3 mt-md-0">
+          <div class="device_background">
+            <svg class="circle_container" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="pale_green" cx="50" cy="50" r="50"></circle>
+            </svg>
+            <svg class="circle_container" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle class="green" cx="50" cy="50" r="40"></circle>
+            </svg>
+            <svg class="shape_cross orange" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" style="top: 15%; right: 6%;">
+              <rect x="-32.54" y="78.39" width="300" height="84" rx="42" transform="translate(120.42 -49.88) rotate(45)"></rect>
+              <rect x="-32.54" y="78.39" width="300" height="84" rx="42" transform="translate(-49.88 120.42) rotate(-45)"></rect>
+            </svg>
+            <svg class="shape_circle purple" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="bottom: 15%; left: 6%;"><circle cx="50" cy="50" r="50"></circle></svg>
+            
+            <div class="device_wrapper">
+              <div class="device">
+                <img class="screenshot_port img-thumbnail" src="transactions.png" alt="" data-bs-toggle="modal" data-bs-target="#modal_t1">
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Modal -->
+        <div class="modal fade" id="modal_t1" role="dialog">
+          <div class="modal-dialog modal_screenshot_port">
+            <div class="modal-body">
+              <img class="img-thumbnail" src="transactions.png" alt="">
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+    
+    <!-- Features -->
+    <!-- <div class="page_section">
+      <div class="page_section_internal container row row-cols-1 row-cols-lg-2 g-4 mx-auto py-3 py-lg-4">
+        <div class="col d-flex ps-2 pe-0 px-md-2">
+          <div class="circular-icon mt-1 me-3">
+            <i class="material-icons-two-tone">upload</i>
+          </div>
+          <div>
+            <h2>Easy import</h2>
+            <span>Coming from another app? <br class="d-none d-xl-block">Easily import your data as a CSV file on the web app</span>
+          </div>
+        </div>
+        
+        <div class="col d-flex ps-2 pe-0 px-md-2">
+          <div class="circular-icon mt-1 me-3">
+            <i class="material-icons-two-tone">wb_cloudy</i>  
+          </div>
+          <div>
+            <h2>Fast Budget Web</h2>
+            <span>Take advantage of a larger screen to better analyze your financial movements</span>
+          </div>
+        </div>
+        
+        <div class="col d-flex ps-2 pe-0 px-md-2">
+          <div class="circular-icon mt-1 me-3">
+            <span class="material-icons-two-tone">account_balance</span>
+          </div>
+          <div>
+            <h2>Bank sync</h2>
+            <span>Download automatically your transactions from your bank account<br>
+              <a href="/bank-sync">Check if your bank is supported</a>
+            </span>
+          </div>
+        </div>
+        
+        <div class="col d-flex ps-2 pe-0 px-md-2">
+          <div class="circular-icon mt-1 me-3">
+            <i class="material-icons-two-tone">email</i>
+          </div>
+          <div>
+            <h2>Contact us</h2>
+            <span>If you have any questions, contact our customer support by email at support.web@fastbudget.it</span>
+          </div>
+        </div>
+      </div>
+    </div>
+     -->
+    <!-- Pricing section -->
+    <div class="page_section background_secondary_pale">
+      <div class="page_section_internal container">
+        <h4 class="fs-3 text-center mb-0"><b>Unlock the full potential of Fintracker</b></h4>
+        
+        <p class="text-center my-3">Want to simplify your financial life? Our personal expense manager does the hard work for you, so you can focus on what matters most</p>
+        
+        <div class="row d-flex justify-content-center mt-0 mt-md-4 my-2 py-0 px-2">
+          
+          <div class="pricing-plan d-none d-lg-flex col-md flex-column border-end mt-4 mt-md-0">
+            <div class="plan-title"><b>No plan</b></div>
+    
+            <div class="feature_list mt-2 mb-3 mb-md-4">
+              <div class="feature"><div class="icon_absent"><div class="material-icons">clear</div></div><div class="feature_name">Data saved only in your device</div></div>
+              <div class="feature"><div class="icon_absent"><div class="material-icons">clear</div></div><div class="feature_name">Web app access</div></div>
+              <div class="feature"><div class="icon_absent"><div class="material-icons">clear</div></div><div class="feature_name">Automatic bank synchronization</div></div>
+            </div>
+            
+          </div>
+          
+          <div class="pricing-plan col-md d-flex flex-column border-end mt-4 mt-md-0">
+            <div class="plan-title"><b>Premium plan</b></div>
+    
+            <div class="feature_list mt-2 mb-3 mb-md-4">
+              <div class="feature"><div class="icon_present"><div class="material-icons">done</div></div><div class="feature_name">Data saved online</div></div>
+              <div class="feature"><div class="icon_present"><div class="material-icons">done</div></div><div class="feature_name">Web app access</div></div>
+              <div class="feature"><div class="icon_absent"><div class="material-icons">clear</div></div><div class="feature_name">Automatic bank synchronization</div></div>
+            </div>
+            
+            <button type="button" class="btn btn-primary button_redirect_login mx-1 mx-md-2 py-md-2"> 19.99€ / Year </button>
+          </div>
+          
+          <div class="pricing-plan col-md d-flex flex-column mt-4 mt-md-0">
+            <div class="plan-title"><b>Ultra plan</b></div>
+    
+            <div class="feature_list mt-2 mb-3 mb-md-4">
+              <div class="feature"><div class="icon_present"><div class="material-icons">done</div></div><div class="feature_name">Data saved online</div></div>
+              <div class="feature"><div class="icon_present"><div class="material-icons">done</div></div><div class="feature_name">Web app access</div></div>
+              <div class="feature"><div class="icon_present"><div class="material-icons">done</div></div><div class="feature_name">Automatic bank synchronization</div></div>
+            </div>
+            
+            <button type="button" class="btn btn-primary button_redirect_login mx-1 mx-md-2 py-md-2"> 29.99€ / Year </button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    
+    <!-- Screenshots -->
+    <div class="page_section mt-3 mt-md-4">
+      <div class="page_section_internal container">
+        <div class="d-none d-lg-flex row justify-content-center mx-3">
+          <div class="col-auto">
+            <img class="screenshot_port img-thumbnail" src="charts.png" alt="" data-bs-toggle="modal" data-bs-target="#modal_z1">
+          </div>
+          <div class="col-auto">
+            <img class="screenshot_port img-thumbnail" src="debts.png" alt="" data-bs-toggle="modal" data-bs-target="#modal_z2">
+          </div>
+          <div class="d-none d-xl-flex col-auto">
+            <img class="screenshot_port img-thumbnail" src="calendar.png" alt="" data-bs-toggle="modal" data-bs-target="#modal_z3">
+          </div>
+          <!-- <div class="col-auto">
+            <img class="screenshot_port img-thumbnail" src="/images/en/new_income_dark.png" alt="" data-bs-toggle="modal" data-bs-target="#modal_z4">
+          </div> -->
+        </div>
+        
+        <div id="carousel_screenshots" class="d-lg-none carousel carousel-dark slide mx-auto" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="img-fluid" src="charts.png" alt="" data-bs-toggle="modal" data-bs-target="#modal_z1">
+            </div>
+            <div class="carousel-item">
+              <img class="img-fluid" src="debts.png" alt="" data-bs-toggle="modal" data-bs-target="#modal_z2">
+            </div>
+            <div class="carousel-item">
+              <img class="img-fluid" src="calendar.png" alt="" data-bs-toggle="modal" data-bs-target="#modal_z3">
+            </div>
+            <div class="carousel-item">
+              <img class="img-fluid" src="new_income_dark.png" alt="" data-bs-toggle="modal" data-bs-target="#modal_z4">
+            </div>
+          </div>
+          
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel_screenshots" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel_screenshots" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          
+        </div>
+        
+        <!-- Modals -->
+        <div class="modal fade" id="modal_z1" role="dialog">
+          <div class="modal-dialog modal_screenshot_port">
+            <div class="modal-body">
+              <img class="img-thumbnail" src="charts.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modal_z2" role="dialog">
+          <div class="modal-dialog modal_screenshot_port">
+            <div class="modal-body">
+              <img class="img-thumbnail" src="debts.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modal_z3" role="dialog">
+          <div class="modal-dialog modal_screenshot_port">
+            <div class="modal-body">
+              <img class="img-thumbnail" src="calendar.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modal_z4" role="dialog">
+          <div class="modal-dialog modal_screenshot_port">
+            <div class="modal-body">
+              <img class="img-thumbnail" src="new_income_dark.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+  
+  <footer class="container-fluid text-center mt-5">
+    <div class="mt-3">Copyright ©2015-2024 AppFer S.R.L. - All rights reserved</div>
+    <div class="mt-1"><a target="_blank" rel="noopener" href="/legal/terms-of-service">Terms of Service</a> | <a target="_blank" rel="noopener" href="/legal/privacy-policy">Privacy Policy</a> | <a class="cursor_pointer mt-2" id="a_handle_cookies">Manage cookies</a></div>
+  </footer>
+  <div id="loadedHeadFiles"></div>
+
+  <script type="text/javascript">
+      function defer(method) {
+          if(window.jQuery && typeof initializeNavbar === "function") { method(); }
+          else { setTimeout(function() { defer(method) }, 50); }
+      }
+      
+      defer(function() {
+          // mctAlert();
+          
+          const webAppAuthUrl = initializeNavbar();
+          $("#button_web_app_auth").on("click tap", () => { window.location.href = webAppAuthUrl; });
+          $(".button_redirect_login").on("click tap", () => { window.location.href = webAppAuthUrl; });
+          
+          // When a user click on an img, open a modal
+          $("img").on("click tap", () => {
+              const imgSrc = $(this).attr("src");
+              $("#modal-image").attr("src", imgSrc);
+              $("#modal-screenshot-zoom").modal("show");
+          });
+      });
+      
+      // Cookies consent
+      function loadCookiesBanner(forceShow) {
+          if(forceShow) {
+              Cookies.remove('doNotTrack');
+              Cookies.remove('doNotTrack', { domain: window.location.hostname.replace("www", "") });  // Remove also on subdomains
+              Cookies.remove('cookieconsent_status');
+          }
+          $(() => { $("#loadedHeadFiles").load("./common-cookie-tracking.html"); });
+      }
+      defer(function() {
+          loadCookiesBanner(false);
+          $("#a_handle_cookies").on("click tap", () => loadCookiesBanner(true));
+      });
+  </script>
+<link rel="stylesheet" href="styles.css">
+</body>
+</html>
